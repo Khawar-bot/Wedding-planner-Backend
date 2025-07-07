@@ -87,7 +87,7 @@ export class MemStorage implements IStorage {
       id: 1,
       brideName: "Sobia",
       groomName: "Ahsan",
-      weddingDate: "2025-12-15",
+      weddingDate: "2025-10-15",
       venue: "Rosewood Manor",
       totalBudget: "50000.00",
     };

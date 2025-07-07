@@ -103,4 +103,4 @@ Changelog:
 
 Preferred communication style: Simple, everyday language.
 Wedding couple: Ahsan (groom) and Sobia (bride)
-Wedding date: December 15, 2025
+Wedding date: October 15, 2025

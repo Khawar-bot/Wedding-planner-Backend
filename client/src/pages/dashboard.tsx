@@ -71,10 +71,10 @@ export default function Dashboard() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-gray-800 mb-4">
-              {weddingDetails?.brideName || "Sobia"} & {weddingDetails?.groomName || "Ahsan"}
+              {weddingDetails?.groomName || "Ahsan"} & {weddingDetails?.brideName || "Sobia"}
             </h2>
             <p className="text-lg text-gray-600 mb-6">
-              {weddingDetails?.weddingDate || "December 15, 2025"} • {weddingDetails?.venue || "Rosewood Manor"}
+              {weddingDetails?.weddingDate || "October 15, 2025"} • {weddingDetails?.venue || "Rosewood Manor"}
             </p>
             <div className="flex justify-center space-x-8 text-center">
               <div className="bg-white bg-opacity-50 rounded-lg p-4 min-w-[100px]">
