@@ -149,6 +149,7 @@
   }
 
   .wedding-input {
-    @apply w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-gold focus:border-transparent;
+    @apply w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:border-transparent;
+    --tw-ring-color: rgb(212 159 141);
   }
 }

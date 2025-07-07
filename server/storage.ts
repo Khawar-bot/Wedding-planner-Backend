@@ -108,7 +108,17 @@ export class MemStorage implements IStorage {
 
   async createGuest(guest: InsertGuest): Promise<Guest> {
     const id = this.getNextId();
-    const newGuest: Guest = { ...guest, id };
+    const newGuest: Guest = { 
+      id,
+      name: guest.name,
+      email: guest.email ?? null,
+      phone: guest.phone ?? null,
+      rsvpStatus: guest.rsvpStatus ?? "pending",
+      plusOne: guest.plusOne ?? null,
+      dietaryRestrictions: guest.dietaryRestrictions ?? null,
+      tableAssignment: guest.tableAssignment ?? null,
+      notes: guest.notes ?? null
+    };
     this.guests.set(id, newGuest);
     return newGuest;
   }
@@ -136,7 +146,15 @@ export class MemStorage implements IStorage {
 
   async createBudgetItem(item: InsertBudgetItem): Promise<BudgetItem> {
     const id = this.getNextId();
-    const newItem: BudgetItem = { ...item, id };
+    const newItem: BudgetItem = { 
+      id,
+      category: item.category,
+      description: item.description,
+      budgetAmount: item.budgetAmount,
+      actualAmount: item.actualAmount ?? null,
+      isPaid: item.isPaid ?? null,
+      notes: item.notes ?? null
+    };
     this.budgetItems.set(id, newItem);
     return newItem;
   }
@@ -164,7 +182,15 @@ export class MemStorage implements IStorage {
 
   async createTimelineEvent(event: InsertTimelineEvent): Promise<TimelineEvent> {
     const id = this.getNextId();
-    const newEvent: TimelineEvent = { ...event, id };
+    const newEvent: TimelineEvent = { 
+      id,
+      title: event.title,
+      description: event.description ?? null,
+      startTime: event.startTime,
+      endTime: event.endTime,
+      location: event.location ?? null,
+      eventType: event.eventType
+    };
     this.timelineEvents.set(id, newEvent);
     return newEvent;
   }
@@ -192,7 +218,15 @@ export class MemStorage implements IStorage {
 
   async createTask(task: InsertTask): Promise<Task> {
     const id = this.getNextId();
-    const newTask: Task = { ...task, id };
+    const newTask: Task = { 
+      id,
+      title: task.title,
+      description: task.description ?? null,
+      isCompleted: task.isCompleted ?? null,
+      dueDate: task.dueDate ?? null,
+      priority: task.priority ?? "medium",
+      category: task.category ?? null
+    };
     this.tasks.set(id, newTask);
     return newTask;
   }
@@ -220,7 +254,19 @@ export class MemStorage implements IStorage {
 
   async createVendor(vendor: InsertVendor): Promise<Vendor> {
     const id = this.getNextId();
-    const newVendor: Vendor = { ...vendor, id };
+    const newVendor: Vendor = { 
+      id,
+      name: vendor.name,
+      category: vendor.category,
+      email: vendor.email ?? null,
+      phone: vendor.phone ?? null,
+      contactName: vendor.contactName ?? null,
+      website: vendor.website ?? null,
+      address: vendor.address ?? null,
+      contractAmount: vendor.contractAmount ?? null,
+      isBooked: vendor.isBooked ?? null,
+      notes: vendor.notes ?? null
+    };
     this.vendors.set(id, newVendor);
     return newVendor;
   }
@@ -248,7 +294,14 @@ export class MemStorage implements IStorage {
 
   async createSeatingTable(table: InsertSeatingTable): Promise<SeatingTable> {
     const id = this.getNextId();
-    const newTable: SeatingTable = { ...table, id };
+    const newTable: SeatingTable = { 
+      id,
+      tableNumber: table.tableNumber,
+      capacity: table.capacity,
+      positionX: table.positionX ?? null,
+      positionY: table.positionY ?? null,
+      shape: table.shape ?? "round"
+    };
     this.seatingTables.set(id, newTable);
     return newTable;
   }

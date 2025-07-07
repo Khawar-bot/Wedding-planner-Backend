@@ -24,14 +24,14 @@ export default function Navigation() {
           <div className="hidden md:flex space-x-8">
             {navItems.map(({ path, label, icon: Icon }) => (
               <Link key={path} href={path}>
-                <a
-                  className={`flex items-center space-x-2 text-gray-600 hover:text-rose-gold transition-colors ${
+                <div
+                  className={`flex items-center space-x-2 text-gray-600 hover:text-rose-gold transition-colors cursor-pointer ${
                     location === path ? "text-rose-gold" : ""
                   }`}
                 >
                   <Icon className="w-4 h-4" />
                   <span>{label}</span>
-                </a>
+                </div>
               </Link>
             ))}
           </div>
