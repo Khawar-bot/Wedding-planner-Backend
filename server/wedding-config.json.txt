@@ -1,0 +1,7 @@
+{
+  "brideName": "Sobia",
+  "groomName": "Ahsan",
+  "weddingDate": "2025-10-10",
+  "venue": "Azad Kashmir",
+  "totalBudget": "65000.00"
+}

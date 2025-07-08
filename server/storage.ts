@@ -85,10 +85,10 @@ export class MemStorage implements IStorage {
     // Initialize with default wedding details
     this.weddingDetails = {
       id: 1,
-      brideName: "Sarah",
-      groomName: "Michael",
-      weddingDate: "2024-06-15",
-      venue: "Rosewood Manor",
+      groomName: "Ahsan",
+      brideName: "Sobia",
+      weddingDate: "2025-10-10",
+      venue: "Kashmir",
       totalBudget: "40000.00",
     };
   }
